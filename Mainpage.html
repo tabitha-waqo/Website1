@@ -1,40 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+    <style>
+        
+        nav {
+            background-color: hotpink; 
+            padding: 15px;
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            text-transform: uppercase; 
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: darkblue; 
+            text-decoration: underline;
+        }
+
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-bottom: 50px;
+        }
+
+        h1 {
+            color: darkblue;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .main-img {
+            border: 8px solid hotpink; 
+            border-radius: 10px;
+            margin-right: 30px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .text-content {
+            line-height: 1.6;
+        }
+    </style>
 </head>
-<body style="font-family: Arial, sans-serif;">
+<body>
 
     
     <nav>
         <a href="About Us.html">About Us</a>
-        <a href="Contacts.html" style="margin-left: 20px;">Contact Us</a>
-        <a href="Services.html" style="margin-left: 20px;">Services</a>
-        <a href="Projects.html" style="margin-left: 20px;">Projects</a>
-        <a href="Team.html" style="margin-left: 20px;">Team</a>
-        <a href="News.html" style="margin-left: 20px;">News</a>
-        <a href="FAQ.html" style="margin-left: 20px;">FAQ</a>
-        <a href="Careers.html" style="margin-left: 20px;">Careers</a>
-        <a href="Testimonials.html" style="margin-left: 20px;">Testimonials</a>
-        <a href="Gallery.html" style="margin-left: 20px;">Gallery</a>
-        <a href="Blog.html" style="margin-left: 20px;">Blog</a>
-        <a href="Privacy.html" style="margin-left: 20px;">Privacy Policy</a>
-        <a href="Terms.html" style="margin-left: 20px;">Terms of Service</a>
-        <a href="Support.html" style="margin-left: 20px;">Help & Support</a>
-        <a href="Events.html" style="margin-left: 20px;">Events</a>
-        <a href="Partners.html" style="margin-left: 20px;">Our Partners</a>
+        <a href="Contacts.html">Contact Us</a>
+        <a href="Services.html">Services</a>
+        <a href="Projects.html">Projects</a>
+        <a href="Team.html">Team</a>
+        <a href="News.html">News</a>
+        <a href="FAQ.html">FAQ</a>
+        <a href="Careers.html">Careers</a>
+        <a href="Testimonials.html">Testimonials</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Blog.html">Blog</a>
+        <a href="Privacy.html">Privacy Policy</a>
+        <a href="Terms.html">Terms of Service</a>
+        <a href="Support.html">Help & Support</a>
+        <a href="Events.html">Events</a>
+        <a href="Partners.html">Our Partners</a>
     </nav>
 
-    <h1 style="color: darkblue;">Welcome to my website</h1>
+    <h1>Welcome to my website</h1>
 
-   
-    <div style="display: flex; align-items: flex-start;">
+    <div class="container">
+        
+        <img src="image.jpg.jpg" alt="Helping each other" width="350" class="main-img">
 
         
-        <img src="image.jpg.jpg" alt="Helping each other" width="300" style="margin-right: 20px;">
-
-        
-        <div>
+        <div class="text-content">
             <p style="color: black;">
                 This website is created to <b>help people</b> by providing simple, clear, and useful information 
                 that can be applied in everyday life. Our main focus is on <u>accessibility and ease of use</u>, 
@@ -53,7 +111,6 @@
                 for everyone.
             </p>
         </div>
-
     </div>
 
 </body>
